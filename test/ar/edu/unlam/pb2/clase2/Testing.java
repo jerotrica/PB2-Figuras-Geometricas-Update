@@ -8,11 +8,12 @@ public class Testing {
 
 	@Test
 	public void testingCuadrado() {
-		Cuadrado cuadradoPrueba = new Cuadrado();
-		cuadradoPrueba.calcularPerimetro((float) 3);
-		cuadradoPrueba.calcularArea((float) 3);
-		assertEquals(12, cuadradoPrueba.visualizarPerimetro(), 0);
-		assertEquals(9, cuadradoPrueba.visualizarArea(), 0);
+		Cuadrado cuadradoPrueba = new Cuadrado(5d);
+		Double area,perimetro;
+		area=cuadradoPrueba.calcularArea();
+		perimetro=cuadradoPrueba.calcularPerimetro();
+		assertEquals(25, area, 0.01);
+		assertEquals(20, perimetro, 0.01);
 	}
 	
 	@Test
@@ -28,10 +29,17 @@ public class Testing {
 
 	@Test
 	public void testingTriangulo() {
-		Triangulo trianguloPrueba = new Triangulo();
-		trianguloPrueba.calcularPerimetro(4, 4, 4);
-		trianguloPrueba.calcularArea(10, 5);
-		assertEquals(12, trianguloPrueba.visualizarPerimetro(),0);
-		assertEquals(25, trianguloPrueba.visualizarArea(), 0);
+		Triangulo miTriangulo= new Triangulo(4d,2d,2.0,3d,5d);
+		/*miTriangulo.setLado1Triangulo(3.0);
+		miTriangulo.setLado2Triangulo(3d);
+		miTriangulo.setLado3Triangulo(5d);
+		miTriangulo.setBase(4d);
+		miTriangulo.setAltura(2d);*/
+		Double perimetro, area;
+		perimetro= miTriangulo.calcularPerimetro();
+		area=miTriangulo.calcularArea();
+		assertEquals(10, perimetro, 0.01);
+		assertEquals(4, area, 0.01);
+
 	}
 }
