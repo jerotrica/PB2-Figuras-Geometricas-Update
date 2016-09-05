@@ -18,10 +18,12 @@ public class Testing {
 	@Test
 	public void testingCirculo() {
 		Circulo circuloPrueba = new Circulo();
-		circuloPrueba.calcularPerimetro(5d);
-		circuloPrueba.calcularArea(4d);
-		assertEquals(31.39, circuloPrueba.setRadio(4d);(),0.01);
-		assertEquals(157.75, circuloPrueba.setRadio(6d);(), 0.01);
+		circuloPrueba.setRadio(4d);
+		Double area,perimetro;
+		area = circuloPrueba.calcularArea();
+		perimetro = circuloPrueba.calcularPerimetro();
+		assertEquals(25.13, perimetro,0.01);
+		assertEquals(157.91, area, 0.01);
 	}
 
 	@Test

@@ -25,13 +25,13 @@ public class Circulo {
 	
 	//METODOS
 	
-	public Double calcularPerimetro (Double radio){
+	public Double calcularPerimetro (){
 		 Double perimetro;
 		 perimetro=(radio *2*Math.PI);
 		 return perimetro;
 	}
 	
-	public Double calcularArea (Double radio){
+	public Double calcularArea (){
 		Double area;
 		area= Math.pow(radio*Math.PI, 2);
 		return area;
