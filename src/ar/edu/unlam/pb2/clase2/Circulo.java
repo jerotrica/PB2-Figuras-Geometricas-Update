@@ -1,20 +1,21 @@
 package ar.edu.unlam.pb2.clase2;
 
+//NOMBRE DE LA CLASE
 public class Circulo {
-	
+
 	// DECLARACION ATRIBUTOS
-	
-	private Double radio;	
-	
-	//CONSTRUCTOR
-	
-	public Circulo(){
-		this.radio= radio;
-		
+
+	private Double radio;
+
+	// CONSTRUCTOR
+
+	public Circulo(Double radio) {
+		this.radio = radio;
+
 	}
-	
-	// GETTERS Y SETTERS 
-	
+
+	// GETTERS Y SETTERS
+
 	public Double getRadio() {
 		return radio;
 	}
@@ -22,19 +23,19 @@ public class Circulo {
 	public void setRadio(Double radio) {
 		this.radio = radio;
 	}
-	
-	//METODOS
-	
-	public Double calcularPerimetro (){
-		 Double perimetro;
-		 perimetro=(radio *2*Math.PI);
-		 return perimetro;
+
+	// METODOS
+
+	public Double calcularPerimetro() {
+		Double perimetro;
+		perimetro = (radio * 2 * Math.PI);
+		return perimetro;
 	}
-	
-	public Double calcularArea (){
+
+	public Double calcularArea() {
 		Double area;
-		area= Math.pow(radio*Math.PI, 2);
+		area = Math.pow(radio * Math.PI, 2);
 		return area;
 	}
-		
+
 }

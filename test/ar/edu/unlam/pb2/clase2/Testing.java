@@ -17,8 +17,8 @@ public class Testing {
 	
 	@Test
 	public void testingCirculo() {
-		Circulo circuloPrueba = new Circulo();
-		circuloPrueba.setRadio(4d);
+		Circulo circuloPrueba = new Circulo(4d);
+		//circuloPrueba.setRadio(4d);
 		Double area,perimetro;
 		area = circuloPrueba.calcularArea();
 		perimetro = circuloPrueba.calcularPerimetro();
