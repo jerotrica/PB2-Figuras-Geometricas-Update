@@ -1,7 +1,7 @@
 package ar.edu.unlam.pb2.clase2;
 
 //NOMBRE DE LA CLASE
-public class Cuadrado {
+public class Cuadrado extends Figura {
 	//DECLARACION DE ATRIBUTOS
 	private Double lado;	
 	

@@ -1,7 +1,7 @@
 package ar.edu.unlam.pb2.clase2;
 
 //NOMBRE DE LA CLASE
-public class Circulo {
+public class Circulo extends Figura {
 
 	// DECLARACION ATRIBUTOS
 	private Double radio;

@@ -1,7 +1,7 @@
 package ar.edu.unlam.pb2.clase2;
 
 //NOMBRE DE LA CLASE
-public class Triangulo {
+public class Triangulo extends Figura {
 
 	// DECLARACION DE ATRIBUTOS
 	private Double lado1, lado2, lado3, base, altura;
